@@ -1,0 +1,49 @@
+.form-control {
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 2rem;
+  cursor: pointer;
+  color: $clr-font-light;
+
+  input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: transparent;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: $clr-primary;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid $clr-primary;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 1.8rem;
+      height: 1.8rem;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      background-image: url(../../../public/images/icon-check.svg);
+      background-size: 1.3rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: $clr-primary;
+    }
+
+    &:checked::before {
+      transform: scale(1);
+    }
+  }
+
+  & + .form-control {
+    margin-top: 1.5rem;
+  }
+}

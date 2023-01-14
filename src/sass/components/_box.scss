@@ -14,4 +14,12 @@
     height: 8rem;
     margin-bottom: 3rem;
   }
+
+  &__strength {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    background: $clr-bg-dark;
+    margin-bottom: 3rem;
+    height: 7rem;
+  }
 }

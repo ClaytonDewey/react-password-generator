@@ -1,0 +1,25 @@
+.btn {
+  &-primary {
+    background-color: $clr-primary;
+    border: 2px solid $clr-primary;
+    text-transform: uppercase;
+    font-family: $ff-mono;
+    color: $clr-bg-dark;
+    font-weight: inherit;
+    cursor: pointer;
+    height: 6.5rem;
+    width: 100%;
+    line-height: 6.5rem;
+    transition: all .25s ease-in-out;
+    margin-bottom: 3rem;
+
+    &:hover {
+      background-color: transparent;
+      color: $clr-primary;
+
+      svg {
+        fill: $clr-primary
+      }
+    }
+  }
+}

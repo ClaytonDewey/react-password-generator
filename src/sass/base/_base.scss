@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0px auto;
+    width: 100%;
+    box-sizing: border-box;
+    background: $clr-bg-dark;
+    color: $clr-font-light;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@media #{$mq-large} {
+  // .divider-small {
+  //   display: none;
+  // }
+  
+  // .divider-large {
+  //   display: block;
+  // }
+}

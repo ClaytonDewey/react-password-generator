@@ -1,0 +1,17 @@
+.box {
+  padding-inline: 3rem;
+  
+  &__password,
+  &__generator {
+    background-color: $clr-bg-light;
+    color: $clr-font-light;
+  }
+
+  &__password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    margin-bottom: 3rem;
+  }
+}

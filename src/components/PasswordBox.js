@@ -3,8 +3,10 @@ import { Icon } from '../Icons';
 const PasswordBox = () => {
   return (
     <div className='box box__password'>
-      <p>PTx1f5DaFX</p>
-      <Icon name='copy' />
+      <input placeholder='PTx1f5DaFX' />
+      <button type='button'>
+        <Icon name='copy' />
+      </button>
     </div>
   );
 };

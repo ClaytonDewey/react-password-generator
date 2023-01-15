@@ -1,7 +1,10 @@
+import Indicators from './Indicators';
+
 const StrengthBox = () => {
   return (
     <div className='box box__strength'>
-      <p className='uppercase'>strength</p>
+      <span className='label uppercase'>strength</span>
+      <Indicators />
     </div>
   );
 };

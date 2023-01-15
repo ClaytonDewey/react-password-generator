@@ -1,0 +1,32 @@
+.indicator {
+  display: inline-block;
+  height: 3rem;
+  width: 1rem;
+  border: 2px solid transparent;
+  background-color: transparent;
+  margin-left: 1rem;
+
+  &.blank {
+    border-color: $clr-font-light;
+  }
+
+  &.danger {
+    background-color: $clr-danger;
+    border-color: $clr-danger;
+  }
+
+  &.warning {
+    background-color: $clr-warning;
+    border-color: $clr-warning;
+  }
+
+  &.info {
+    background-color: $clr-info;
+    border-color: $clr-info;
+  }
+
+  &.strong {
+    background-color: $clr-primary;
+    border-color: $clr-primary;
+  }
+}

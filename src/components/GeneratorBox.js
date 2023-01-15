@@ -1,11 +1,12 @@
 import StrengthBox from './StrengthBox';
 import Button from './Button';
 import Checkbox from './Checkbox';
+import Slider from './Slider';
 
 const GeneratorBox = () => {
   return (
     <div className='box box__generator'>
-      <h1>Character Length</h1>
+      <Slider />
       <div className='mb-3'>
         <Checkbox label='Include Uppercase Letters' />
         <Checkbox label='Include Lowercase Letters' />

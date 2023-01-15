@@ -45,6 +45,10 @@
     &:checked::before {
       transform: scale(1);
     }
+
+    &:hover {
+      border-color: $clr-primary;
+    }
   }
 
   & + .form-control {

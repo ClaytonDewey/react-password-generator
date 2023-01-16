@@ -1,10 +1,11 @@
 .slider {
-  margin-bottom: 2rem;
-  position: relative;
+  margin-bottom: 5rem;
 
   label {
-    display: block;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
   }
 
   input[type="range"] {
@@ -90,10 +91,7 @@
   }
 
   output {
-    position: absolute;
     color: $clr-primary;
-    top: 0;
-    right: 0;
     font-size: $fs-300;
   }
 }

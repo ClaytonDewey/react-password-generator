@@ -8,11 +8,15 @@
 
 html,
 body {
-    margin: 4rem auto;
     width: 100%;
     box-sizing: border-box;
     background: $clr-bg-dark;
     color: $clr-font-light;
+}
+
+body {
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 .sr-only {

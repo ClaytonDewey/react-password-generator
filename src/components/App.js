@@ -19,6 +19,7 @@ const App = () => {
 
   return (
     <div className='generator'>
+      <h1 className='text-center'>Password Generator</h1>
       <PasswordBox />
       <GeneratorBox length={length} handleLengthChange={handleLengthChange} />
     </div>

@@ -3,7 +3,7 @@ import { Icon } from '../Icons';
 const PasswordBox = () => {
   return (
     <div className='box box__password'>
-      <input placeholder='PTx1f5DaFX' />
+      <input type='text' placeholder='P4$$W0rD!' />
       <button type='button'>
         <Icon name='copy' />
       </button>

@@ -30,6 +30,16 @@
       right: 3rem;
       top: 50%;
       transform: translateY(-50%);
+
+      svg {
+        transition: fill .25s ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          fill: $clr-font-light
+        }
+      }
     }
   }
 

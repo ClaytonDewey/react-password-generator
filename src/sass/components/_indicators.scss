@@ -5,10 +5,7 @@
   border: 2px solid transparent;
   background-color: transparent;
   margin-left: 7px;
-
-  &.blank {
-    border-color: $clr-font-light;
-  }
+  border-color: $clr-font-light;
 
   &.danger {
     background-color: $clr-danger;

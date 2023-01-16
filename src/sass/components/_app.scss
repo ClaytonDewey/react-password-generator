@@ -1,11 +1,12 @@
 .generator {
   width: 100%;
   max-width: 54rem;
-  margin: 4rem auto;
+  margin: 0 auto;
 
-  h1 {
-    color: $clr-font-dark;
-    font-size: $fs-200;
-    margin-block: 3rem;
-  }
+}
+
+h1 {
+  color: $clr-font-dark;
+  font-size: $fs-200;
+  margin-block: 3rem;
 }

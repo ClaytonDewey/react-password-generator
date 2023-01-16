@@ -4,7 +4,7 @@ import GeneratorBox from './GeneratorBox';
 import PasswordBox from './PasswordBox';
 
 const App = () => {
-  const [length, setLength] = useState(25);
+  const [length, setLength] = useState(0);
 
   const handleLengthChange = (e) => {
     let target = e.target;

@@ -13,7 +13,7 @@ const Slider = ({ length, handleLengthChange }) => {
         onChange={handleChange}
         name='length'
         id='length'
-        min='10'
+        min='0'
         max='40'
         defaultValue={length}
       />

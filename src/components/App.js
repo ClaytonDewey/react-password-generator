@@ -85,7 +85,9 @@ const App = () => {
 
   return (
     <>
-      <h1 className='text-center'>Password Generator</h1>
+      <header>
+        <h1 className='text-center'>Password Generator</h1>
+      </header>
       <main className='generator'>
         <PasswordBox password={password} />
         <GeneratorBox

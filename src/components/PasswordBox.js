@@ -18,6 +18,7 @@ const PasswordBox = ({ password }) => {
       <input type='text' defaultValue={password} placeholder='P4$$W0rD!' />
       <button type='button' onClick={handleClick}>
         <Icon name='copy' />
+        <span className='sr-only'>copy to clipboard</span>
       </button>
       {isVisible && <span className='on-success-copied uppercase'>copied</span>}
     </div>

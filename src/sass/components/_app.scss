@@ -3,6 +3,9 @@
   max-width: 54rem;
   margin: 0 auto;
 
+  @media #{$mq-medium} {
+    width: 54rem;
+  }
 }
 
 h1 {

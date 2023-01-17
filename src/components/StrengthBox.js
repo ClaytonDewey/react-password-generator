@@ -1,10 +1,10 @@
 import Indicators from './Indicators';
 
-const StrengthBox = () => {
+const StrengthBox = ({ strength }) => {
   return (
     <div className='box box__strength'>
       <span className='label uppercase'>strength</span>
-      <Indicators />
+      <Indicators strength={strength} />
     </div>
   );
 };

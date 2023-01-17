@@ -1,8 +1,8 @@
-const Checkbox = ({ label }) => {
+const Checkbox = ({ label, onChange }) => {
   return (
     <>
       <label className='form-control'>
-        <input type='checkbox' />
+        <input onChange={onChange} type='checkbox' />
         {label}
       </label>
     </>

@@ -1,29 +1,40 @@
-.indicator {
-  display: inline-block;
-  height: 2.5rem;
-  width: 1rem;
-  border: 2px solid transparent;
-  background-color: transparent;
-  margin-left: 7px;
-  border-color: $clr-font-light;
-
-  &.danger {
-    background-color: $clr-danger;
-    border-color: $clr-danger;
+.indicators {
+  i {
+    display: inline-block;
+    height: 2.5rem;
+    width: 1rem;
+    border: 2px solid transparent;
+    background-color: transparent;
+    margin-left: 7px;
+    border-color: $clr-font-light;
   }
 
-  &.warning {
-    background-color: $clr-warning;
-    border-color: $clr-warning;
+  &.tooweak {
+    i:first-child {
+      background-color: $clr-danger;
+      border-color: $clr-danger;
+    }
   }
 
-  &.info {
-    background-color: $clr-info;
-    border-color: $clr-info;
+  &.weak {
+    i:first-child,
+    i:nth-child(2) {
+      background-color: $clr-warning;
+      border-color: $clr-warning;
+    }
+  }
+
+  &.medium {
+    i:not(:last-child) {
+      background-color: $clr-info;
+      border-color: $clr-info;
+    }
   }
 
   &.strong {
-    background-color: $clr-primary;
-    border-color: $clr-primary;
+    i {
+      background-color: $clr-primary;
+      border-color: $clr-primary;
+    }
   }
 }

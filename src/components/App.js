@@ -40,11 +40,11 @@ const App = () => {
   useEffect(() => {
     if (length === 0) {
       setStrength('');
-    } else if (length >= 1 && length <= 6) {
+    } else if (length >= 1 && length <= 5) {
       setStrength('too weak!');
-    } else if (length > 6 && length <= 15) {
+    } else if (length > 5 && length <= 10) {
       setStrength('weak');
-    } else if (length > 15 && length <= 30) {
+    } else if (length > 10 && length <= 25) {
       setStrength('medium');
     } else {
       setStrength('strong');

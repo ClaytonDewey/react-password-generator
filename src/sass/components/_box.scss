@@ -46,6 +46,14 @@
         }
       }
     }
+
+    .on-success-copied {
+      color: $clr-primary;
+      position: absolute;
+      right: 6.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   &__strength {

@@ -11,6 +11,9 @@ const GeneratorBox = ({
   onChangeUseLowercase,
   onChangeUseNumbers,
   onChangeUseSymbols,
+  setActiveItemsCount,
+  generatePassword,
+  disabled,
 }) => {
   return (
     <div className='box box__generator'>
@@ -18,17 +21,27 @@ const GeneratorBox = ({
       <div className='mb-3'>
         <Checkbox
           onChange={onChangeUseUppercase}
+          setActiveItemsCount={setActiveItemsCount}
           label='Include Uppercase Letters'
         />
         <Checkbox
           onChange={onChangeUseLowercase}
+          setActiveItemsCount={setActiveItemsCount}
           label='Include Lowercase Letters'
         />
-        <Checkbox onChange={onChangeUseNumbers} label='Include Numbers' />
-        <Checkbox onChange={onChangeUseSymbols} label='Include Symbols' />
+        <Checkbox
+          onChange={onChangeUseNumbers}
+          setActiveItemsCount={setActiveItemsCount}
+          label='Include Numbers'
+        />
+        <Checkbox
+          onChange={onChangeUseSymbols}
+          setActiveItemsCount={setActiveItemsCount}
+          label='Include Symbols'
+        />
       </div>
       <StrengthBox strength={strength} />
-      <Button />
+      <Button generatePassword={generatePassword} disabled={disabled} />
     </div>
   );
 };

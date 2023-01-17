@@ -1,9 +1,11 @@
 // Breakpoints
 $bp-small: 23.4375em; // 375x;
+$bp-medium: 34.375em; // 375x;
 $bp-large: 90em; // 1440px;
 
 // Media Queries
 $mq-small: 'screen and (min-width: #{$bp-small})';
+$mq-medium: 'screen and (min-width: #{$bp-medium})';
 $mq-large: 'screen and (min-width: #{$bp-large})';
 
 // Font family

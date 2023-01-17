@@ -16,7 +16,11 @@ body {
 
 body {
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
+
+  @media #{$mq-medium} {
+    padding: 4rem 0;
+  }
 }
 
 .sr-only {

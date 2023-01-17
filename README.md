@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ClaytonDewey/react-password-generator)
-- Live Site URL: [Add live site URL here](https://claytondewey.github.io/react-password-generator/)
+- Solution URL: [https://github.com/ClaytonDewey/react-password-generator](https://github.com/ClaytonDewey/react-password-generator)
+- Live Site URL: [https://claytondewey.github.io/react-password-generator/](https://claytondewey.github.io/react-password-generator/)
 
 ## My process
 

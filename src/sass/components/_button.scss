@@ -21,4 +21,14 @@
       }
     }
   }
+
+  &:disabled {
+    opacity: .2;
+    cursor:not-allowed;
+
+    &:hover {
+      background-color: $clr-primary;
+      color: $clr-bg-dark
+    }
+  }
 }

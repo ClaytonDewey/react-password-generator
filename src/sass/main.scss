@@ -1,12 +1,8 @@
-@import './abstracts/normalize';
-@import './abstracts/variables';
+// Abstracts/Variables
+@use 'abstracts';
 
-@import './base/base';
-@import './base/typography';
+// Base
+@use 'base';
 
-@import './components/app';
-@import './components/box';
-@import './components/button';
-@import './components/checkbox';
-@import './components/indicators';
-@import './components/slider';
+// Components
+@use 'components';

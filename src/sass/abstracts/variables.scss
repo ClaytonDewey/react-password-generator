@@ -1,0 +1,30 @@
+@use '../util' as *;
+
+:root {
+  // Colors
+  --clr-primary: #a4ffaf;
+  --clr-danger: #f64a4a;
+  --clr-warning: #fb7c58;
+  --clr-info: #f8cd65;
+  --clr-font-light: #e6e5ea;
+  --clr-font-dark: #817d92;
+  --clr-bg-dark: #18171f;
+  --clr-bg-light: #24232c;
+
+  // Font family
+  --ff-mono: 'JetBrains Mono', monospace;
+
+  // Font weights
+  --fw-700: 700;
+  --fw-400: 400;
+
+  // Font sizes
+  --fs-300: #{rem(32)};
+  --fs-200: #{rem(24)};
+  --fs-100: #{rem(18)};
+
+  // Lineheight
+  --lh-3: #{rem(43)};
+  --lh-2: #{rem(31)};
+  --lh-1: #{rem(23)};
+}

@@ -1,14 +1,16 @@
+@use '../util' as *;
+
 .form-control {
   font-weight: bold;
   line-height: 1.1;
   display: grid;
   grid-template-columns: 1em auto;
-  gap: 2rem;
+  gap: rem(20);
   cursor: pointer;
-  color: $clr-font-light;
-  margin-bottom: 2rem;
+  color: var(--clr-font-light);
+  margin-bottom: rem(20);
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
     appearance: none;
@@ -17,30 +19,30 @@
     /* Not removed via appearance */
     margin: 0;
     font: inherit;
-    color: $clr-primary;
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid $clr-font-light;
+    color: var(--clr-primary);
+    width: rem(20);
+    height: rem(20);
+    border: rem(2) solid var(--clr-font-light);
     transform: translateY(-0.075em);
     display: grid;
     place-content: center;
     cursor: pointer;
 
     &::before {
-      content: "";
-      width: 1.8rem;
-      height: 1.8rem;
+      content: '';
+      width: rem(18);
+      height: rem(18);
       transform: scale(0);
       transition: 120ms transform ease-in-out;
       background-image: url(../../../public/images/icon-check.svg);
-      background-size: 1.3rem;
+      background-size: rem(13);
       background-repeat: no-repeat;
       background-position: center center;
-      background-color: $clr-primary;
+      background-color: var(--clr-primary);
     }
 
     &:checked {
-      border-color: $clr-primary;
+      border-color: var(--clr-primary);
     }
 
     &:checked::before {
@@ -48,11 +50,11 @@
     }
 
     &:hover {
-      border-color: $clr-primary;
+      border-color: var(--clr-primary);
     }
   }
 
   & + .form-control {
-    margin-top: 1.5rem;
+    margin-top: rem(15);
   }
 }

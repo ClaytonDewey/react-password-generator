@@ -1,10 +1,12 @@
+@use '../util' as *;
+
 .box {
-  padding: 3rem;
-  
+  padding: rem(30);
+
   &__password,
   &__generator {
-    background-color: $clr-bg-light;
-    color: $clr-font-light;
+    background-color: var(--clr-bg-light);
+    color: var(--clr-font-light);
   }
 
   &__password {
@@ -12,19 +14,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8rem;
-    margin-bottom: 3rem;
+    height: rem(80);
+    margin-bottom: rem(30);
     position: relative;
-    
+
     input {
-      padding: 3rem;
+      padding: rem(30);
       width: 100%;
-      height: 8rem;
+      height: rem(80);
       border: none;
       background-color: transparent;
-      color: $clr-font-dark;
-      font-weight: $fw-700;
-      font-size: $fs-200;
+      color: var(--clr-font-dark);
+      font-weight: var(--fw-700);
+      font-size: var(--fs-200);
     }
 
     button {
@@ -32,25 +34,25 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
-      right: 3rem;
+      right: rem(30);
       top: 50%;
       transform: translateY(-50%);
 
       svg {
-        transition: fill .25s ease-in-out;
+        transition: fill 0.25s ease-in-out;
       }
 
       &:hover {
         svg {
-          fill: $clr-font-light
+          fill: var(--clr-font-light);
         }
       }
     }
 
     .on-success-copied {
-      color: $clr-primary;
+      color: var(--clr-primary);
       position: absolute;
-      right: 6.5rem;
+      right: rem(65);
       top: 50%;
       transform: translateY(-50%);
     }
@@ -60,9 +62,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: $clr-bg-dark;
-    margin-bottom: 3rem;
-    height: 7rem;
+    background: var(--clr-bg-dark);
+    margin-bottom: rem(30);
+    height: rem(70);
 
     span {
       display: flex;
@@ -70,7 +72,7 @@
     }
 
     .label {
-      color: $clr-font-dark;
+      color: var(--clr-font-dark);
     }
   }
 }

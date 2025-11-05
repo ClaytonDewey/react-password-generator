@@ -1,0 +1,99 @@
+@use '../util' as *;
+
+.slider {
+  margin-bottom: rem(50);
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(30);
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none;
+    margin-right: rem(15);
+    width: 100%;
+    height: rem(8);
+    background: var(--clr-bg-dark);
+    background-image: linear-gradient(var(--clr-primary), var(--clr-primary));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* Input Thumb */
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: rem(25);
+    width: rem(25);
+    border-radius: 50%;
+    background: var(--clr-font-light);
+    cursor: ew-resize;
+    box-shadow: 0 0 rem(2) 0 #555;
+    transition: all 0.3s ease-in-out;
+  }
+
+  input[type='range']::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: rem(25);
+    width: rem(25);
+    border-radius: 50%;
+    background: var(--clr-font-light);
+    cursor: ew-resize;
+    box-shadow: 0 0 rem(2) 0 #555;
+    transition: all 0.3s ease-in-out;
+  }
+
+  input[type='range']::-ms-thumb {
+    -webkit-appearance: none;
+    height: rem(25);
+    width: rem(25);
+    border-radius: 50%;
+    background: var(--clr-font-light);
+    cursor: ew-resize;
+    box-shadow: 0 0 rem(2) 0 #555;
+    transition: all 0.3s ease-in-out;
+  }
+
+  input[type='range']::-webkit-slider-thumb:hover {
+    background: var(--clr-bg-dark);
+    border: rem(2) solid var(--clr-primary);
+  }
+
+  input[type='range']::-moz-range-thumb:hover {
+    background: var(--clr-bg-dark);
+    border: rem(2) solid var(--clr-primary);
+  }
+
+  input[type='range']::-ms-thumb:hover {
+    background: var(--clr-bg-dark);
+    border: rem(2) solid var(--clr-primary);
+  }
+
+  /* Input Track */
+  input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  input[type='range']::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  input[type='range']::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  output {
+    color: var(--clr-primary);
+    font-size: var(--fs-300);
+  }
+}

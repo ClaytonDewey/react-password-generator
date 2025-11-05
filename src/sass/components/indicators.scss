@@ -1,0 +1,42 @@
+@use '../util' as *;
+
+.indicators {
+  i {
+    display: inline-block;
+    height: rem(25);
+    width: rem(10);
+    border: rem(2) solid transparent;
+    background-color: transparent;
+    margin-left: rem(7);
+    border-color: var(--clr-font-light);
+  }
+
+  &.tooweak {
+    i:first-child {
+      background-color: var(--clr-danger);
+      border-color: var(--clr-danger);
+    }
+  }
+
+  &.weak {
+    i:first-child,
+    i:nth-child(2) {
+      background-color: var(--clr-warning);
+      border-color: var(--clr-warning);
+    }
+  }
+
+  &.medium {
+    i:not(:last-child) {
+      background-color: var(--clr-info);
+      border-color: var(--clr-info);
+    }
+  }
+
+  &.strong {
+    i {
+      background-color: var(--clr-primary);
+      border-color: var(--clr-primary);
+    }
+  }
+}

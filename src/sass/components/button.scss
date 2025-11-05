@@ -1,0 +1,36 @@
+@use '../util' as *;
+
+.btn {
+  &-primary {
+    background-color: var(--clr-primary);
+    border: rem(2) solid var(--clr-primary);
+    text-transform: uppercase;
+    font-family: var(--ff-mono);
+    color: var(--clr-bg-dark);
+    font-weight: inherit;
+    cursor: pointer;
+    height: rem(65);
+    width: 100%;
+    line-height: rem(65);
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--clr-primary);
+
+      svg {
+        fill: var(--clr-primary);
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: var(--clr-primary);
+      color: var(--clr-bg-dark);
+    }
+  }
+}

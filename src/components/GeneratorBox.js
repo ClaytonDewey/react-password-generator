@@ -22,22 +22,26 @@ const GeneratorBox = ({
         <Checkbox
           onChange={onChangeUseUppercase}
           setActiveItemsCount={setActiveItemsCount}
-          label='Include Uppercase Letters'
+          labelText='Include Uppercase Letters'
+          label='uppercase'
         />
         <Checkbox
           onChange={onChangeUseLowercase}
           setActiveItemsCount={setActiveItemsCount}
-          label='Include Lowercase Letters'
+          labelText='Include Lowercase Letters'
+          label='lowercase'
         />
         <Checkbox
           onChange={onChangeUseNumbers}
           setActiveItemsCount={setActiveItemsCount}
-          label='Include Numbers'
+          labelText='Include Numbers'
+          label='numbers'
         />
         <Checkbox
           onChange={onChangeUseSymbols}
           setActiveItemsCount={setActiveItemsCount}
-          label='Include Symbols'
+          labelText='Include Symbols'
+          label='symbols'
         />
       </div>
       <StrengthBox strength={strength} />

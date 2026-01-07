@@ -15,7 +15,7 @@ const App = () => {
   const [useSymbols, setUseSymbols] = useState(false);
 
   const handleLengthChange = (e) => {
-    let target = e.target;
+    const target = e.target;
     const min = target.min;
     const max = target.max;
     const val = target.value;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const Checkbox = ({ label, onChange, setActiveItemsCount }) => {
+const Checkbox = ({ label, labelText, onChange, setActiveItemsCount }) => {
   const [isActive, setIsActive] = useState(false);
 
   const changehandler = () => {
@@ -24,9 +24,14 @@ const Checkbox = ({ label, onChange, setActiveItemsCount }) => {
   }, [isActive, setActiveItemsCount]);
   return (
     <>
-      <label className='form-control'>
-        <input checked={isActive} onChange={changehandler} type='checkbox' />
-        {label}
+      <label className='form-control' htmlFor={label}>
+        <input
+          checked={isActive}
+          onChange={changehandler}
+          type='checkbox'
+          id={label}
+        />
+        {labelText}
       </label>
     </>
   );

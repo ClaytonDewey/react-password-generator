@@ -6,7 +6,7 @@ const Slider = ({ length, handleLengthChange }) => {
   return (
     <div className='slider'>
       <label htmlFor='length'>
-        Character Length<output id='rangevalue'>{length}</output>
+        Character Length <span>{length}</span>
       </label>
       <input
         type='range'
@@ -16,7 +16,11 @@ const Slider = ({ length, handleLengthChange }) => {
         min='0'
         max='20'
         defaultValue={length}
+        aria-describedby='rangevalue'
       />
+      <output className='sr-only' id='rangevalue'>
+        {length}
+      </output>
     </div>
   );
 };

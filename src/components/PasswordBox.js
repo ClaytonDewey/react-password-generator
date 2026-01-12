@@ -5,22 +5,32 @@ const PasswordBox = ({ password }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = () => {
+    if (password === '') return;
     navigator.clipboard.writeText(password);
     setIsVisible(true);
 
     setTimeout(() => {
       setIsVisible(false);
-    }, 3000);
+    }, 5000);
   };
 
   return (
     <div className='box box__password'>
-      <input type='text' defaultValue={password} placeholder='P4$$W0rD!' />
+      <div className='output'>{password !== '' ? password : 'P4$$W0rD!'}</div>
+
       <button type='button' onClick={handleClick}>
         <Icon name='copy' />
         <span className='sr-only'>copy to clipboard</span>
       </button>
-      {isVisible && <span className='on-success-copied uppercase'>copied</span>}
+      {isVisible && (
+        <span
+          id='copyStatus'
+          role='status'
+          aria-live='polite'
+          className='on-success-copied uppercase'>
+          copied
+        </span>
+      )}
     </div>
   );
 };

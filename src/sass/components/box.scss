@@ -18,10 +18,12 @@
     margin-bottom: rem(30);
     position: relative;
 
-    input {
-      padding: rem(30);
+    input,
+    .output {
+      display: flex;
+      align-items: center;
+      padding-inline: rem(30);
       width: 100%;
-      height: rem(80);
       border: none;
       background-color: transparent;
       color: var(--clr-font-dark);

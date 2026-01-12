@@ -24,7 +24,7 @@ const Checkbox = ({ label, labelText, onChange, setActiveItemsCount }) => {
   }, [isActive, setActiveItemsCount]);
   return (
     <>
-      <label className='form-control'>
+      <label className='form-control' htmlFor={label}>
         <input
           checked={isActive}
           onChange={changehandler}

@@ -20,7 +20,6 @@ const Slider = ({ length, handleLengthChange }) => {
         aria-valuemax='20'
         aria-valuenow={length}
         defaultValue={length}
-        aria-describedby='rangevalue'
       />
     </div>
   );

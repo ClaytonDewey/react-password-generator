@@ -16,12 +16,12 @@ const Slider = ({ length, handleLengthChange }) => {
         min='0'
         max='20'
         value={length}
+        aria-valuemin='0'
+        aria-valuemax='20'
+        aria-valuenow={length}
         defaultValue={length}
         aria-describedby='rangevalue'
       />
-      <output className='sr-only' id='rangevalue'>
-        {length}
-      </output>
     </div>
   );
 };

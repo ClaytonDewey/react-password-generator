@@ -18,9 +18,11 @@ const PasswordBox = ({ password }) => {
     <div className='box box__password'>
       <div className='output'>{password !== '' ? password : 'P4$$W0rD!'}</div>
 
-      <button type='button' onClick={handleClick}>
+      <button
+        type='button'
+        onClick={handleClick}
+        aria-label='copy to clipboard'>
         <Icon name='copy' />
-        <span className='sr-only'>copy to clipboard</span>
       </button>
       {isVisible && (
         <span
